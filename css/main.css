@@ -13,17 +13,16 @@ html {
 body {
     background: rgb(34,89,195);
     background: linear-gradient(0deg, rgba(34,89,195,1) 0%, rgba(117,217,255,1) 100%);
-    /* background-size: cover; */
 }
 
 .container {
-    margin: 2rem auto;
+    margin: 4rem auto;
     width: 300px;
 }
 
 input, button {
     display: block;
-    margin: auto;
+    margin: 0 auto;
     border-radius: 5px;
 }
 
@@ -58,6 +57,24 @@ h2 {
 p {
     font-size: 130%;
     float: right;
+}
+
+.main-section {
+    font-weight: 700;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+#temp {
+    font-size: 300%;
+}
+
+#condition {
+    font-size: 200%;
+}
+
+.secondary {
+    padding: 0 30px;
 }
 
 #card {

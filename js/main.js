@@ -45,9 +45,9 @@ const loadData = async (event) => {
     event.preventDefault();
     const weatherInfo = await getData();
     document.getElementById('card').style.display = '';
-    temp.innerHTML = (Math.round(weatherInfo.main.temp * 10) / 10) + "&deg; F";
-    min.innerHTML = (Math.round(weatherInfo.main.temp_min * 10) / 10) + "&deg; F";
-    max.innerHTML = (Math.round(weatherInfo.main.temp_max * 10) / 10) + "&deg; F";
+    temp.innerHTML = (Math.round(weatherInfo.main.temp * 10) / 10) + "&deg;";
+    min.innerHTML = (Math.round(weatherInfo.main.temp_min * 10) / 10) + "&deg;";
+    max.innerHTML = (Math.round(weatherInfo.main.temp_max * 10) / 10) + "&deg;";
     condition.innerHTML = weatherInfo.weather[0].main;
     humidity.innerHTML = weatherInfo.main.humidity + "%";
 
